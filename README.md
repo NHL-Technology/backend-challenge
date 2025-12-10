@@ -1,7 +1,7 @@
 # Backend Challenge - API de Biblioteca
 
 **Tiempo límite:** 30 minutos
-**Tecnologías:** PHP Laravel, Eloquent ORM, SQLite/MySQL
+**Tecnologías:** PHP Laravel, Eloquent ORM, MySQL
 
 ## Contexto
 
@@ -33,8 +33,9 @@ cp .env.example .env
 # Genera la clave de la aplicación
 php artisan key:generate
 
-# Crea la base de datos (SQLite)
-touch database/database.sqlite
+# Crea la base de datos en MySQL
+mysql -u root -p -e "CREATE DATABASE biblioteca_api;"
+# O usa tu cliente MySQL favorito (phpMyAdmin, MySQL Workbench, etc.)
 
 # Ejecuta las migraciones
 php artisan migrate
