@@ -19,13 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// TODO: Descomentar y/o agregar las siguientes rutas
-
-// Listar todos los libros
-// Route::get('/books', [BookController::class, 'index']);
-
-// Mostrar detalle de un libro
-// Route::get('/books/{id}', [BookController::class, 'show']);
-
-// Crear un nuevo préstamo
-// Route::post('/loans', [BookController::class, 'store']);
+// TODO: Implementar las rutas necesarias para:
+// - Listar todos los libros
+// - Mostrar detalle de un libro
+// - Crear un nuevo préstamo

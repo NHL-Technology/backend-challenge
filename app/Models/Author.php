@@ -16,7 +16,6 @@ class Author extends Model
 
     /**
      * TODO: Definir la relación con Book
-     * Un autor puede tener muchos libros (hasMany)
      */
     // public function books()
     // {

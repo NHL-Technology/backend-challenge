@@ -24,7 +24,6 @@ class Loan extends Model
 
     /**
      * TODO: Definir la relación con Book
-     * Un préstamo pertenece a un libro (belongsTo)
      */
     // public function book()
     // {

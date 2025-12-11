@@ -23,7 +23,6 @@ class Book extends Model
 
     /**
      * TODO: Definir la relación con Author
-     * Un libro pertenece a un autor (belongsTo)
      */
     // public function author()
     // {
@@ -32,7 +31,6 @@ class Book extends Model
 
     /**
      * TODO: Definir la relación con Loan
-     * Un libro puede tener muchos préstamos (hasMany)
      */
     // public function loans()
     // {

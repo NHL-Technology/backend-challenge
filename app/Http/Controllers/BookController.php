@@ -15,12 +15,7 @@ class BookController extends Controller
     public function index()
     {
         // TODO: Obtener todos los libros con sus autores
-        // Usar with('author') para eager loading
-        // Retornar JSON con estructura:
-        // {
-        //   "success": true,
-        //   "data": [...]
-        // }
+        // Retornar JSON: { "success": true, "data": [...] }
     }
 
     /**
@@ -29,10 +24,8 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        // TODO: Buscar el libro por ID
-        // Incluir autor y préstamos (with(['author', 'loans']))
-        // Si no existe, retornar 404
-        // Si existe, retornar JSON con el libro
+        // TODO: Buscar el libro por ID incluyendo autor y préstamos
+        // Retornar 404 si no existe
     }
 
     /**
@@ -41,23 +34,12 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        // TODO: Validar los datos recibidos
-        // - book_id: required, exists:books,id
-        // - user_name: required, string, max:255
-        // - loan_date: required, date
+        // TODO: Validar los datos recibidos (book_id, user_name, loan_date)
 
-        // TODO: Buscar el libro
+        // TODO: Verificar disponibilidad del libro
+        // Si no está disponible, retornar error 400
 
-        // TODO: Verificar si el libro está disponible
-        // Si NO está disponible, retornar error 400:
-        // {
-        //   "success": false,
-        //   "message": "El libro no está disponible para préstamo"
-        // }
-
-        // TODO: Si está disponible:
-        // 1. Crear el préstamo con status 'active'
-        // 2. Actualizar el libro a available = false
-        // 3. Retornar response 201 con el préstamo creado
+        // TODO: Crear el préstamo y actualizar disponibilidad del libro
+        // Retornar response 201
     }
 }
